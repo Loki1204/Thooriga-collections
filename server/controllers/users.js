@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-import User from "../models/user.js";
+import User from "../models/User.js";
 
 // @desc SignIn authentication
 // @route POST  api/users/auth/signin
