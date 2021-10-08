@@ -50,7 +50,7 @@ export const updateCart = async (req, res) => {
 export const removeProductFromCart = async (req, res) => {
   try {
     const cart = await Cart.findById(req.params.id);
-    console.log(cart);
+
     if (!cart) {
       return res.status(404).json({
         success: false,

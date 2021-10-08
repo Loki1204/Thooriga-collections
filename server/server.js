@@ -23,7 +23,7 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/order", orderRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to Thooriga Silks API");
+  res.send("Welcome to Thooriga Collections API");
 });
 
 const PORT = process.env.PORT || 5000;
