@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Backend URL
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://thooriga-collections.herokuapp.com/api",
 });
 
 // Intercepting the request and adding Bearer to request headers.
