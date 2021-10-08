@@ -1,0 +1,71 @@
+.auth__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  min-height: 400px;
+  background: var(--white-color);
+  padding: 50px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-top: var(--mb-2);
+}
+
+.auth__container .inputBox,
+.googleSignIn,
+.switchButton {
+  position: relative;
+  margin: 20px 0;
+}
+
+.auth__container .inputBox input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid var(--dark-color-light);
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.auth__container .inputBox input:focus,
+.auth__container .inputBox input:valid {
+  border-bottom-color: #5656db;
+}
+
+.auth__container .inputBox input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  background: #5656db;
+  color: var(--white-color);
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+
+.auth__container .inputBox input[type="submit"]:hover {
+  background: #3030ce;
+}
+
+.googleSignIn,
+.switchButton {
+  display: flex;
+  justify-content: center;
+}
+
+.auth__container .googleSignIn img {
+  cursor: pointer;
+}
+
+.auth__container .switchButton input {
+  cursor: pointer;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 16px;
+}

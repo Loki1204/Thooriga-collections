@@ -1,0 +1,45 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+.img__display {
+  overflow: hidden;
+}
+
+.img__showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.img__showcase img {
+  min-width: 100%;
+}
+
+.img__select {
+  display: flex;
+}
+
+.img__item {
+  margin: var(--mb-1);
+  cursor: pointer;
+}
+
+.img__item:nth-child(1),
+.img__item:nth-child(2),
+.img__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.img__item:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .product__gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

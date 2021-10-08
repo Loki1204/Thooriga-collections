@@ -1,0 +1,36 @@
+.aboutUs__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: var(--mb-4);
+  box-shadow: 10px 5px 5px var(--dark-color);
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
+.aboutUs__header {
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--gray-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.aboutUs__description {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+@media screen and (min-width: 601px) {
+  .aboutUs__container {
+    width: 75%;
+    left: 50px
+  }
+}
+@media screen and (min-width: 769px) {
+    .aboutUs__container {
+      width: 60%;
+      left: 200px
+    }
+  }
